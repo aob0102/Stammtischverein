@@ -94,6 +94,43 @@ footer a {
   text-decoration: none;
 }
 
+/* === IMPRESSUM === */
+.impressum {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.impressum h2 {
+  color: #780000;
+  margin-top: 0;
+}
+
+.impressum h3 {
+  color: #780000;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.impressum p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.impressum a {
+  color: #780000;
+  text-decoration: none;
+}
+
+.impressum a:hover {
+  text-decoration: underline;
+}
+
 /* === BEITRÄGE === */
 .beitraege {
   max-width: 850px;
@@ -195,6 +232,11 @@ footer a {
     padding: 25px 15px;
   }
 
+  .impressum {
+    margin: 20px 10px;
+    padding: 25px 15px;
+  }
+
   .beitraege {
     margin: 30px auto;
     padding: 10px;
@@ -217,12 +259,11 @@ footer a {
   font-size: 2rem;
   cursor: pointer;
   color: white;
-  position: absolute;     /* ✅ feste Position im Header */
-  top: 15px;              /* ✅ Abstand von oben */
-  right: 20px;            /* ✅ Abstand vom rechten Rand */
-  z-index: 1100;          /* ✅ über allem sichtbar */
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1100;
 }
-
 
 /* === FIX FÜR UNTEREN/OBEREN RAND-BALKEN === */
 header {
@@ -243,9 +284,8 @@ body {
   background-color: #faf9f7;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* verhindert horizontales Scrollen durch Menü */
+  overflow-x: hidden;
 }
-
 
 /* --- nur aktiv auf kleinen Bildschirmen --- */
 @media (max-width: 700px) {
@@ -279,7 +319,7 @@ body {
     position: relative;
   }
 
-    /* Fix: Menü-Overlay nicht Text überdecken */
+  /* Fix: Menü-Overlay nicht Text überdecken */
   nav ul {
     z-index: 1000;
   }
@@ -293,6 +333,4 @@ body {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
   }
-
 }
-
