@@ -168,7 +168,153 @@ footer a {
   border-radius: 6px;
   margin-top: 10px;
 }
+/* === ANMELDEFORMULAR === */
+.anmeldung {
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
 
+.anmeldung h2 {
+  color: #780000;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.termin-info {
+  background-color: #f8ebe0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border-left: 4px solid #780000;
+}
+
+.termin-info h3 {
+  color: #780000;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.termin-info p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #780000;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #780000;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.checkbox-group label a {
+  color: #780000;
+  text-decoration: underline;
+}
+
+.submit-btn {
+  background-color: #780000;
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #5a0000;
+  transform: translateY(-2px);
+}
+
+.form-hinweis {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+.info-box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.info-box h3 {
+  color: #780000;
+  margin-top: 0;
+}
+
+.info-box p {
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .anmeldung {
+    margin: 20px 10px;
+    padding: 25px 15px;
+  }
+
+  .termin-info {
+    padding: 15px;
+  }
+
+  .submit-btn {
+    padding: 12px 30px;
+  }
+}
 /* === RESPONSIVE DESIGN === */
 
 /* Tablets und kleinere Laptops */

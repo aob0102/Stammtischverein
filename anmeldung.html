@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anmeldung – Stammtischverein Oberland</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <img src="images/Stammtisch Verein Oberland-01.png" alt="Logo Stammtischverein Oberland" class="logo">
+    <h1>Stammtischverein Oberland</h1>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul id="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#ueber-uns">Über uns</a></li>
+        <li><a href="index.html#termine">Termine</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+        <li><a href="beitraege.html">Beiträge</a></li>
+        <li><a class="active" href="anmeldung.html">Anmeldung</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="anmeldung">
+    <h2>Anmeldung zum Stammtisch</h2>
+    
+    <div class="termin-info">
+      <h3>Nächster Stammtisch</h3>
+      <p><strong>Donnerstag, 13. Februar 2025</strong></p>
+      <p>📍 Gasthaus Taube, Rankweil</p>
+      <p>🕐 Ab 19:00 Uhr</p>
+    </div>
+
+    <form id="anmeldeform" action="https://formspree.io/f/IHR_FORMSPREE_CODE" method="POST">
+      <div class="form-group">
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-Mail *</label>
+        <input type="email" id="email" name="email" required placeholder="max@beispiel.at">
+      </div>
+
+      <div class="form-group">
+        <label for="telefon">Telefon</label>
+        <input type="tel" id="telefon" name="telefon" placeholder="+43 123 456789">
+      </div>
+
+      <div class="form-group">
+        <label for="personen">Anzahl Personen *</label>
+        <select id="personen" name="personen" required>
+          <option value="">Bitte wählen...</option>
+          <option value="1">1 Person</option>
+          <option value="2">2 Personen</option>
+          <option value="3">3 Personen</option>
+          <option value="4">4 Personen</option>
+          <option value="5+">5+ Personen</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="nachricht">Nachricht / Besondere Wünsche</label>
+        <textarea id="nachricht" name="nachricht" rows="4" placeholder="Gibt es etwas, das wir wissen sollten?"></textarea>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="mitglied" name="mitglied" value="ja">
+        <label for="mitglied">Ich bin bereits Mitglied des Stammtischvereins</label>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="datenschutz" name="datenschutz" required>
+        <label for="datenschutz">Ich habe die <a href="impressum.html">Datenschutzerklärung</a> gelesen und akzeptiert *</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Verbindlich anmelden</button>
+      
+      <p class="form-hinweis">* Pflichtfelder</p>
+    </form>
+
+    <div class="info-box">
+      <h3>Hinweise</h3>
+      <p>✓ Die Anmeldung ist kostenlos</p>
+      <p>✓ Ihr erhaltet eine Bestätigung per E-Mail</p>
+      <p>✓ Bei Verhinderung bitte rechtzeitig absagen</p>
+      <p>✓ Gäste sind herzlich willkommen!</p>
+    </div>
+  </main>
+
+  <footer>
+    <small>&copy; 2024 Stammtischverein Oberland – <a href="impressum.html">Impressum</a></small>
+  </footer>
+
+</body>
+</html>
